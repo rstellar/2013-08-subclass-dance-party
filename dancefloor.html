@@ -6,12 +6,16 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/secondDancer.js"></script>
+    <script src="src/thirdDancer.js"></script>
   </head>
   <body>
 
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SecondDancer">add a second type of dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="ThirdDancer">add a third type of dancer</a>
     </div>
 
     <script>
@@ -37,7 +41,7 @@
           var dancerMakerFunction = window[dancerMakerFunctionName];
 
           // make a dancer with a random position
-          var dancer = dancerMakerFunction(
+          var dancer = new dancerMakerFunction(
             $("body").height() * Math.random(),
             $("body").width() * Math.random(),
             Math.random() * 1000

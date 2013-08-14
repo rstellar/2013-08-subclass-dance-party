@@ -21,7 +21,20 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:150px solid red;
+  border-radius:70px;
+  position:absolute;
+}
+
+.second-dancer{
+  border-image: url("MarcusPhoto.jpg" height="42" width="42");
+/*  border:30px solid blue;
+  border-radius:20px;*/
+  position:absolute;
+}
+
+.third-dancer{
+  border:20px solid green;
+  border-radius:20px;
   position:absolute;
 }
